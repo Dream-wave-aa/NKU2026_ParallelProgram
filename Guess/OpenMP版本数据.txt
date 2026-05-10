@@ -1,0 +1,69 @@
+======OpenMP MD5版本（O2优化）======
+Guess time:0.882339seconds
+Hash time:3.22284seconds
+Train time:30.8773seconds
+
+ Performance counter stats for './main_OpenMP':
+
+         41,150.06 msec task-clock:u              #    1.028 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+            67,239      page-faults:u             #    0.002 M/sec                  
+   103,931,746,947      cycles:u                  #    2.526 GHz                    
+    60,935,326,681      instructions:u            #    0.59  insn per cycle         
+   <not supported>      branches:u                                                  
+       663,158,380      branch-misses:u                                             
+
+      40.013496669 seconds time elapsed
+
+      40.484883000 seconds user
+       0.605777000 seconds sys
+
+
+
+
+======OpenMP MD5版本（O1优化）======
+Guess time:0.875765seconds
+Hash time:3.16116seconds
+Train time:30.4729seconds
+
+ Performance counter stats for './main_OpenMP':
+
+         40,013.52 msec task-clock:u              #    1.028 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+            68,542      page-faults:u             #    0.002 M/sec                  
+   100,515,131,706      cycles:u                  #    2.512 GHz                    
+    65,655,086,000      instructions:u            #    0.65  insn per cycle         
+   <not supported>      branches:u                                                  
+       634,845,760      branch-misses:u                                             
+
+      38.919621035 seconds time elapsed
+
+      39.138478000 seconds user
+       0.781868000 seconds sys
+
+
+
+
+
+======OpenMP MD5版本（无编译优化）======
+Guess time:8.7171seconds
+Hash time:9.66447seconds
+Train time:99.8863seconds
+
+ Performance counter stats for './main_OpenMP':
+
+        130,909.91 msec task-clock:u              #    1.014 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+            66,881      page-faults:u             #    0.511 K/sec                  
+   333,911,801,018      cycles:u                  #    2.551 GHz                    
+   365,310,373,341      instructions:u            #    1.09  insn per cycle         
+   <not supported>      branches:u                                                  
+       958,497,220      branch-misses:u                                             
+
+     129.135122180 seconds time elapsed
+
+     129.798688000 seconds user
+       0.767789000 seconds sys

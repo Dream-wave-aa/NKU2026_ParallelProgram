@@ -1,0 +1,74 @@
+===== O2优化  =====
+Guess time:0.722265seconds
+Hash time:2.07721seconds
+Train time:28.7193seconds
+
+ Performance counter stats for './main_SIMD':
+
+         35,938.51 msec task-clock:u              #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+            74,922      page-faults:u             #    0.002 M/sec                  
+    91,546,568,790      cycles:u                  #    2.547 GHz                    
+    50,890,468,264      instructions:u            #    0.56  insn per cycle         
+   <not supported>      branches:u                                                  
+       636,345,243      branch-misses:u                                             
+
+      35.945909646 seconds time elapsed
+
+      35.445150000 seconds user
+       0.350313000 seconds sys
+
+
+
+
+
+
+===== O1优化 =====
+Guess time:0.611124seconds
+Hash time:2.25854seconds
+Train time:32.3285seconds
+
+ Performance counter stats for './main_SIMD':
+
+         40,294.86 msec task-clock:u              #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+            66,112      page-faults:u             #    0.002 M/sec                  
+   102,677,977,288      cycles:u                  #    2.548 GHz                    
+    55,571,987,324      instructions:u            #    0.54  insn per cycle         
+   <not supported>      branches:u                                                  
+       645,077,808      branch-misses:u                                             
+
+      40.308434189 seconds time elapsed
+
+      39.588683000 seconds user
+       0.570508000 seconds sys
+
+
+
+
+
+
+
+
+===== 无优化 =====
+Guess time:8.02665seconds
+Hash time:15.7442seconds
+Train time:101.377seconds
+
+ Performance counter stats for './main_SIMD':
+
+        135,792.30 msec task-clock:u              #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+            76,691      page-faults:u             #    0.565 K/sec                  
+   347,918,897,643      cycles:u                  #    2.562 GHz                    
+   362,030,774,412      instructions:u            #    1.04  insn per cycle         
+   <not supported>      branches:u                                                  
+     1,016,440,955      branch-misses:u                                             
+
+     135.850317227 seconds time elapsed
+
+     134.546213000 seconds user
+       0.770706000 seconds sys
