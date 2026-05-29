@@ -1,0 +1,69 @@
+// main
+
+// === time ./ ====
+
+Guess time:0.833927seconds
+Hash time:2.0728seconds
+Train time:29.3439seconds
+
+real    0m36.847s
+user    0m36.190s
+sys     0m0.475s
+
+//  === perf stat ====
+
+Guess time:0.746835seconds
+Hash time:2.03249seconds
+Train time:27.9333seconds
+
+ Performance counter stats for './main':
+
+         35,205.86 msec task-clock:u              #    1.000 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+            92,864      page-faults:u             #    0.003 M/sec                  
+    89,336,284,934      cycles:u                  #    2.538 GHz                    
+    50,890,468,273      instructions:u            #    0.57  insn per cycle         
+   <not supported>      branches:u                                                  
+       639,279,343      branch-misses:u                                             
+
+      35.212774333 seconds time elapsed
+
+      34.654693000 seconds user
+       0.410316000 seconds sys
+
+// mainpthread
+
+// === time ./ ===
+
+Guess time:0.619597seconds
+Hash time:2.00845seconds
+Train time:28.0586seconds
+
+real    0m34.712s
+user    0m34.314s
+sys     0m0.662s
+
+
+
+// === perf stat ===
+
+Guess time:0.816446seconds
+Hash time:2.03268seconds
+Train time:39.1098seconds
+
+ Performance counter stats for './main_pthread':
+
+         47,054.96 msec task-clock:u              #    1.011 CPUs utilized          
+                 0      context-switches:u        #    0.000 K/sec                  
+                 0      cpu-migrations:u          #    0.000 K/sec                  
+            98,797      page-faults:u             #    0.002 M/sec                  
+   117,918,844,410      cycles:u                  #    2.506 GHz                    
+    51,696,076,424      instructions:u            #    0.44  insn per cycle         
+   <not supported>      branches:u                                                  
+       663,167,880      branch-misses:u                                             
+
+      46.558194005 seconds time elapsed
+
+      45.717932000 seconds user
+       1.326029000 seconds sys
